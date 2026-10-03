@@ -1,0 +1,11 @@
+{
+  "name": "bismuthglass-plugins",
+  "owner": { "name": "BismuthGlass" },
+  "plugins": [
+    {
+      "name": "sound-notifs",
+      "source": "./plugins/sound-notifs",
+      "description": "Sound feedback for Claude Code from swappable sound packs."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Default",
+  "description": "Soft synthesized chimes.",
+  "volume": 1,
+  "events": {
+    "submit": "submit.wav",
+    "error": "error.wav",
+    "prompt": "prompt.wav",
+    "done": "done.wav"
+  }
+}

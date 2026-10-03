@@ -1,0 +1,57 @@
+{
+  "name": "sound-notifs",
+  "version": "0.1.1",
+  "description": "Plays a sound when you submit a message, on errors, when Claude needs your input, and when it finishes working. Sounds come from swappable sound packs.",
+  "userConfig": {
+    "enabled": {
+      "type": "boolean",
+      "title": "Sounds enabled",
+      "description": "Master switch for every sound.",
+      "default": true
+    },
+    "pack": {
+      "type": "string",
+      "title": "Sound pack",
+      "description": "Name of the sound pack directory to use (see /sounds list).",
+      "default": "default"
+    },
+    "volume": {
+      "type": "number",
+      "title": "Sound volume",
+      "description": "Master volume in percent: 0 is silent, 100 plays sounds as recorded, up to 400.",
+      "default": 100,
+      "min": 0,
+      "max": 400
+    },
+    "packsDir": {
+      "type": "string",
+      "title": "Sound packs directory",
+      "description": "Where your own sound packs live. Empty means ~/.claude/sound-packs.",
+      "default": ""
+    },
+    "onSubmit": {
+      "type": "boolean",
+      "title": "Sound on submit",
+      "description": "Play a sound when you submit a message.",
+      "default": true
+    },
+    "onError": {
+      "type": "boolean",
+      "title": "Sound on error",
+      "description": "Play a sound when Claude cannot continue because the turn failed.",
+      "default": true
+    },
+    "onPrompt": {
+      "type": "boolean",
+      "title": "Sound on prompt",
+      "description": "Play a sound when Claude asks a question or needs a permission.",
+      "default": true
+    },
+    "onDone": {
+      "type": "boolean",
+      "title": "Sound on done",
+      "description": "Play a sound when Claude has finished working, background agents included.",
+      "default": true
+    }
+  }
+}

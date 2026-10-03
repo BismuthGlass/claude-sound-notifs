@@ -1,0 +1,11 @@
+{
+  "name": "macOS",
+  "description": "The system alert sounds that ship with macOS.",
+  "volume": 1,
+  "events": {
+    "submit": { "file": "/System/Library/Sounds/Pop.aiff", "volume": 0.6 },
+    "error": "/System/Library/Sounds/Basso.aiff",
+    "prompt": ["/System/Library/Sounds/Ping.aiff", "/System/Library/Sounds/Funk.aiff"],
+    "done": "/System/Library/Sounds/Glass.aiff"
+  }
+}
